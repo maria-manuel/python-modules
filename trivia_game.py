@@ -23,7 +23,7 @@ print('Hello trivia game!')
 #     - Consider using a for-loop to go through the data structure.
 # 
 
-# First Attempt ##
+### First Attempt MM ###
 
 # answer = None
 
@@ -50,24 +50,55 @@ print('Hello trivia game!')
 
 ## Step 1: Make sure simple code works ###
 
+# answer = input('What is the capital of California? ')
+# if answer == 'Sacramento':
+#     print('Correct')
+# else:
+#     print('Incorrect. The answer is Sacramento.')
+
+# answer = input('What seafood is San Francisco best known for? ')
+# if answer == 'crab':
+#     print('Correct')
+# else:
+#     print('Incorrect. The answer is crab.')
+
+# answer = input("What is the main character's name in the Matrix? ")
+# if answer == 'Neo':
+#     print('Correct')
+# else:
+#     print('Incorrect. The answer is Neo.')
+
+
+### Step 2: Add a counter ###
+
+correct_count = 0
+incorrect_count = 0
+
 answer = input('What is the capital of California? ')
 if answer == 'Sacramento':
     print('Correct')
+    correct_count = correct_count + 1
 else:
     print('Incorrect. The answer is Sacramento.')
+    incorrect_count = incorrect_count + 1
 
 answer = input('What seafood is San Francisco best known for? ')
 if answer == 'crab':
     print('Correct')
+    correct_count = correct_count + 1
 else:
     print('Incorrect. The answer is crab.')
+    incorrect_count = incorrect_count + 1
 
 answer = input("What is the main character's name in the Matrix? ")
 if answer == 'Neo':
     print('Correct')
+    correct_count = correct_count + 1
 else:
     print('Incorrect. The answer is Neo.')
+    incorrect_count = incorrect_count + 1
 
-
-
+print('Great job')
+print('Correct answers: ', correct_count)
+print('Incorrect answers: ', incorrect_count)
 
