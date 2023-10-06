@@ -23,16 +23,50 @@ print('Hello trivia game!')
 #     - Consider using a for-loop to go through the data structure.
 # 
 
-# First Question ##
+# First Attempt ##
 
-answer = None
+# answer = None
 
-while answer != 'Sacramento':
-    answer = input('What is the capital of California? ')
-    if answer == 'Sacramento':
-        print('Correct')
-    else:
-        print('Try again')
+# while answer != 'Sacramento':
+#     answer = input('What is the capital of California? ')
+#     if answer == 'Sacramento':
+#         print('Correct')
+#     else:
+#         print('Try again')
+
+# while answer != 'crab' or 'crabs':
+#     answer = input('What seafood is San Francisco best known for? ')
+#     if answer == 'crab' or 'crabs':
+#         print('Correct')
+#     else:
+#         print('Try again')
+
+# while answer != 'Neo':
+#     answer = input("What is the main character's name in the Matrix? ")
+#     if answer == 'neo' or 'Neo':
+#         print('Correct')
+#     else:
+#         print('Try again')
+
+## Step 1: Make sure simple code works ###
+
+answer = input('What is the capital of California? ')
+if answer == 'Sacramento':
+    print('Correct')
+else:
+    print('Incorrect. The answer is Sacramento.')
+
+answer = input('What seafood is San Francisco best known for? ')
+if answer == 'crab':
+    print('Correct')
+else:
+    print('Incorrect. The answer is crab.')
+
+answer = input("What is the main character's name in the Matrix? ")
+if answer == 'Neo':
+    print('Correct')
+else:
+    print('Incorrect. The answer is Neo.')
 
 
 
