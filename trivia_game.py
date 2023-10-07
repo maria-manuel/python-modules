@@ -80,39 +80,71 @@ print('Hello trivia game!')
 
 # ### Step 3: Refractor some code for simplicity; add counter###
 
+# correct_count = 0
+# incorrect_count = 0
+
+# question = 'What is the capital of California?'
+# correct_answer = 'Sacramento'
+# answer = input(question)
+
+# if answer == correct_answer:
+#     print('Correct')
+#     correct_count = correct_count + 1
+# else:
+#     print('Incorrect. The answer is Sacramento.')
+#     incorrect_count = incorrect_count + 1
+
+# answer = input('What seafood is San Francisco best known for? ')
+# if answer == 'crab':
+#     print('Correct')
+#     correct_count = correct_count + 1
+# else:
+#     print('Incorrect. The answer is crab.')
+#     incorrect_count = incorrect_count + 1
+
+# answer = input("What is the main character's name in the Matrix? ")
+# if answer == 'Neo':
+#     print('Correct')
+#     correct_count = correct_count + 1
+# else:
+#     print('Incorrect. The answer is Neo.')
+#     incorrect_count = incorrect_count + 1
+
+# print('Great job')
+# print('Correct answers: ', correct_count)
+# print('Incorrect answers: ', incorrect_count)
+
+### Step 4: Add Dictionary; revoke some more ###
+
 correct_count = 0
 incorrect_count = 0
 
-question = 'What is the capital of California?'
-correct_answer = 'Sacramento'
-answer = input(question)
+trivia_questions = {
+    'What is the capital of California? ': 'Sacramento',
+    'What seafood is San Francisco best known for? ': 'crab',
+     "What is the main character's name in the Matrix? ": 'Neo',
+}
 
-if answer == correct_answer:
-    print('Correct')
-    correct_count = correct_count + 1
-else:
-    print('Incorrect. The answer is Sacramento.')
-    incorrect_count = incorrect_count + 1
+for question, correct_answer in trivia_questions.items():
+    print('question', question)
+    print('answer', correct_answer)
 
-answer = input('What seafood is San Francisco best known for? ')
-if answer == 'crab':
-    print('Correct')
-    correct_count = correct_count + 1
-else:
-    print('Incorrect. The answer is crab.')
-    incorrect_count = incorrect_count + 1
+    answer = input(question)
 
-answer = input("What is the main character's name in the Matrix? ")
-if answer == 'Neo':
-    print('Correct')
-    correct_count = correct_count + 1
-else:
-    print('Incorrect. The answer is Neo.')
-    incorrect_count = incorrect_count + 1
+    if answer == correct_answer:
+        print('Correct')
+        correct_count = correct_count + 1
+    else:
+        print('Incorrect. The answer is Sacramento.')
+        incorrect_count = incorrect_count + 1
 
+
+print('---------------------------')
 print('Great job')
 print('Correct answers: ', correct_count)
 print('Incorrect answers: ', incorrect_count)
+
+
 
 
 
