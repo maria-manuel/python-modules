@@ -21,3 +21,17 @@ print('Challenge 2 -------------')
 
 import library
 library.greeter(name='Keanu')
+
+print('Challenge 3 -------------')
+# Challenge 3:
+# Time to get practice making your own module.
+# 1. Create a new file called mymod.py
+# 2. In mymod: Add a print statement to it which says "mymod getting imported"
+# 3. In this file: Import mymod
+# 3. In mymod: Create a function in the module called "myfunc". It should have a print
+#    statement  saying "myfunc getting invoked".
+# 4. In this file: Invoke myfunc
+
+import mymod
+
+mymod.myfunc()
