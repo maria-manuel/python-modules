@@ -143,8 +143,3 @@ print('---------------------------')
 print('Great job')
 print('Correct answers: ', correct_count)
 print('Incorrect answers: ', incorrect_count)
-
-
-
-
-
