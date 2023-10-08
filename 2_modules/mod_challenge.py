@@ -35,3 +35,20 @@ print('Challenge 3 -------------')
 import mymod
 
 mymod.myfunc()
+
+print('Challenge 4 -------------')
+# Challenge 4:
+# Uncomment the following code. Fix the typos so that it runs func1 and func2.
+
+#import anotherlib.py
+#from anotherlib import.func2
+#anotherlib.py.func1()
+#func2()
+
+import anotherlib
+from anotherlib import func2
+anotherlib.func1()
+func2()
+
+
+
