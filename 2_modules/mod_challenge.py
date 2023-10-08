@@ -50,5 +50,26 @@ from anotherlib import func2
 anotherlib.func1()
 func2()
 
+print('Challenge 5 -------------')
+# Challenge 5:
+# Look around in the directories next to this file. Can you find 'file1' and
+# 'file2'? Add code here to import those files
+
+## Answer One or... ##
+import mod.file1
+import mod.deeper.file2
+
+## Answer Two ##
+from mod import file1
+from mod.deeper import file2
+
+print('-------------')
+# Bonus Challenge:
+# Uncomment the following code. Can you figure out why it doesn't work?
+#import brokenmod
+#brokenmod.submodule
 
 
+# Advanced Bonus Challenge: (no solution)
+# Take the game you made in the previous exercise. Refactor it so that
+# functions are in separate files that get imported as necessary.
