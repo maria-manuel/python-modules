@@ -33,8 +33,8 @@ locations = [
 # import pprint
 # pprint.pprint(...something goes here...)
 
-import pprint
-pprint.pprint(locations)
+# import pprint
+# pprint.pprint(locations)
 
 
 
@@ -52,14 +52,14 @@ print('Challenge 2 -------------')
 #random shuffle(data)
 #print data
 
-import time
-import subprocess
-import datetime
-import random
-print(random.randint(5, 10))
-data = ['a', 'b', 'c']
-random.shuffle(data)
-print(data)
+# import time
+# import subprocess
+# import datetime
+# import random
+# print(random.randint(5, 10))
+# data = ['a', 'b', 'c']
+# random.shuffle(data)
+# print(data)
 
 
 print('Challenge 3 -------------')
@@ -79,7 +79,10 @@ print('Challenge 3 -------------')
 #d = json.loads(some_json_text)
 #print(d['a'])
 
-
+import json
+some_json_text = open('example_json.json').read()
+d = json.loads(some_json_text)
+print(d['a'])
 
 
 
