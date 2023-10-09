@@ -52,7 +52,14 @@ print('Challenge 2 -------------')
 #random shuffle(data)
 #print data
 
-
+import time
+import subprocess
+import datetime
+import random
+print(random.randint(5, 10))
+data = ['a', 'b', 'c']
+random.shuffle(data)
+print(data)
 
 
 print('Challenge 3 -------------')
