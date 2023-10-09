@@ -79,10 +79,10 @@ print('Challenge 3 -------------')
 #d = json.loads(some_json_text)
 #print(d['a'])
 
-import json
-some_json_text = open('example_json.json').read()
-d = json.loads(some_json_text)
-print(d['a'])
+# import json
+# some_json_text = open('example_json.json').read()
+# d = json.loads(some_json_text)
+# print(d['a'])
 
 
 
@@ -96,9 +96,8 @@ print('Challenge 4 -------------')
 # 4. Can you modify your code to print out ONLY the extra values, skipping the
 # stuff that stays the same at the beginning? Hint: Use "list slicing" syntax
 
-
-
-
+import sys
+print(sys.arg[1:])
 
 print('Challenge 5 -------------')
 # Challenge 5:
