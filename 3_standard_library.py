@@ -1,5 +1,7 @@
 # REMINDER: Only do one challenge at a time! Save and test after every one.
 
+print('ready for dictionsries within lists')
+
 print('Challenge 1 -------------')
 # Challenge 1:
 # - Use pprint to instead print the "locations" list. Some almost finished code
@@ -31,6 +33,8 @@ locations = [
 # import pprint
 # pprint.pprint(...something goes here...)
 
+import pprint
+pprint.pprint(locations)
 
 
 
