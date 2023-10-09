@@ -96,16 +96,21 @@ print('Challenge 4 -------------')
 # 4. Can you modify your code to print out ONLY the extra values, skipping the
 # stuff that stays the same at the beginning? Hint: Use "list slicing" syntax
 
-import sys
-print(sys.arg[1:])
+# import sys
+# print(sys.arg[1:])
 
 print('Challenge 5 -------------')
 # Challenge 5:
 # 1. Uncomment the two following lines of code.
 # 2. Add the missing code to get them working, and print out the output.
 # 3. What do they do? What are the differences between them?
+
 # subprocess.run('ls')
 # output = subprocess.check_output('ls')
+
+
+subprocess.run('ls') 
+output = subprocess.check_output('ls')
 
 
 
